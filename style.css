@@ -1,0 +1,249 @@
+/* ---------- GENERAL ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+p { line-height: 190%; }
+
+a {
+    text-decoration: none;
+    color: #c0392b;
+}
+
+/* ---------- MENU ---------- */
+#menu {
+    background-color: #c0392b;
+    height: 100px;
+}
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+#menu li { display: inline-block; }
+#menu a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100px;
+    color: #ffffff;
+    padding: 0 40px;
+    border: none;
+    display: block;
+}
+#menu a:hover { background-color: #e74c3c; }
+
+/* ---------- HEADER ---------- */
+#header {
+    padding: 60px 0 40px 0;
+    background-color: #333333;
+    text-align: center;
+}
+#header h1 {
+    letter-spacing: 0.1em;
+    font-size: 44px;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+#header p {
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ---------- BANNER (ALL PAGES) ---------- */
+#banner {
+    height: 300px;
+    overflow: hidden;
+}
+#banner img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* ---------- PAGE LAYOUT ---------- */
+#page {
+    min-height: 400px;
+    padding: 20px;
+}
+#page::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#page h2 {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    color: #c0392b;
+}
+#content {
+    float: left;
+    width: 70%;
+}
+#sidebar {
+    float: right;
+    width: 25%;
+}
+
+ul.styled {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul.styled li {
+    border-top: solid 1px #e5e5e5;
+    padding: 14px 0;
+}
+
+/* ---------- FEATURED CARS (HOME PAGE) ---------- */
+.car {
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+.car img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+.car h3 { margin: 10px 0 0 0; }
+.car p { margin: 0; line-height: 150%; }
+.car .price {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* ---------- VEHICLES PAGE ---------- */
+.vehicle {
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+    margin-right: 2%;
+    margin-bottom: 30px;
+}
+.vehicle img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+.vehicle h3 { margin: 10px 0; }
+ul.specs {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul.specs li { padding: 4px 0; }
+.vehicle .price {
+    color: #c0392b;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* ---------- BUTTONS ---------- */
+.button {
+    display: inline-block;
+    background-color: #c0392b;
+    color: #ffffff;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.button:hover { background-color: #e74c3c; }
+
+/* ---------- CONTACT FORM ---------- */
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+form input[type="submit"] { margin-top: 20px; }
+
+/* ---------- FOOTER ---------- */
+#footer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1e1b1a;
+    padding: 25px 22px 30px 22px;
+    overflow: hidden;
+    clear: both;
+}
+#footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+#footer p { color: #adadad; }
+#footer a { color: #adadad; }
+#footer li { color: #adadad; }
+
+#box1 { float: left; width: 30%; padding-left: 30px; box-sizing: border-box; }
+#box2 { float: left; width: 30%; padding-right: 30px; box-sizing: border-box; }
+#box3 { float: right; width: 30%; padding-left: 30px; box-sizing: border-box; }
+
+/* ---------- COPYRIGHT ---------- */
+#copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #c0392b;
+    padding: 45px 0;
+    clear: both;
+}
+#copyright p {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ---------- SMALL SCREENS ---------- */
+@media (max-width: 800px) {
+    #content, #sidebar {
+        float: none;
+        width: 100%;
+    }
+    #box1, #box2, #box3 {
+        float: none;
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+    #menu a { padding: 0 15px; }
+    .car, .vehicle { width: 46%; }
+}
